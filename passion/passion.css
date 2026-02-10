@@ -1,0 +1,57 @@
+body {
+    background-color:#f1ecda;
+    color:#3c3227;
+
+    font-family: 'Gentium Plus', serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 30px;
+    padding: 15px;
+    
+   
+    text-align: left;
+}
+
+    h1 {
+    font-family: 'Gentium Plus', serif;
+      font-size: 50px;
+      font-style: italic;
+}
+
+
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid #3c3227;
+  border-style: dotted;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid #3c3227;
+  border-style: dotted;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 30px;
+  padding: 30px;
+  max-width: 580px;
+  font-family: monospace;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin: auto;
+}
+
+.element-a {
+    color: #4c8a52;
+    text-decoration: none;
+}

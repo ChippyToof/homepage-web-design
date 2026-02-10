@@ -1,3 +1,95 @@
+@keyframes blink {
+    2%, 19% {
+        opacity: 1;
+    }
+    70%, 100% {
+        opacity: 0;
+    }
+}
+
 body {
-    background-color: blanchedalmond;
+    background-image: url(./homepage-assets/cat-jumping.gif);
+    background-size: cover;
+    background-attachment:scroll;
+    margin: 0px ;
+    color: rgb(26, 23, 21);
+}
+
+    h1 {
+        font-family: 'Gentium Plus', serif;
+        font-size: 65px;
+        font-style: italic;
+        line-height: 63px;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    padding: 20px;
+    margin: 20px;
+}
+
+.menu-button-container {
+    
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 30px 80px 30px 80px;
+    display: flex;
+    font-family: 'Gentium Plus', serif;
+    
+}
+
+.menu-buttons {
+    font-family: 'Gentium Plus', serif;
+    padding: 5px 20px 5px 20px;
+}
+
+#goodbye-button {
+    
+    font-family: 'Gentium Plus', serif;
+    color: white;
+    background-color: rgb(224, 84, 84);
+    border-color: #3c3227;
+    position: absolute;
+    display: sticky;
+    top: 70px;
+    left: 10px;
+    
+}
+
+.enter-button {
+    padding:10px 80px 10px 80px;
+    font-size: 20px;
+    font-family: 'Gentium Plus', serif;
+    animation: blink 1s linear infinite;
+   
+}
+
+.top-marquee {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(234, 250, 0);
+    border: 3px solid #3c3227;
+    font-size: 40px;
+    color: #3c3227;
+    font-weight: bold;
+    margin-bottom: 20px;
+    top: 0;
+    
+    
+}
+
+.btm-marquee {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(234, 250, 0);
+    border: 3px solid #3c3227;
+    font-size: 40px;
+    color: #3c3227;
+    font-weight: bold;
+    margin-top: 30px;
+    
+    
+    
 }

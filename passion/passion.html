@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+                 
+        <title>passion</title>
+        <link rel="stylesheet" href="passion.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+
+       <!--Below: Blinking typewriter effect for news ticker--->
+       
+       <script type="text/javascript">
+// <![CDATA[
+var news=Array("31,025 Minutes"); // set news items here. Keep all on same line, and within quotes, and separate each item with a comma
+var cursor="_"; // set cursor
+var delay=12; // seconds between each news item
+
+/***************************\
+* News Ticker Text Effect   *
+*(c)2004-14 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX *
+\***************************/
+var newsp, cursp, flash, item=0;
+
+if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addRVLoadEvent(teleprint);
+
+function teleprint () { if (document.getElementById) {
+  var span=document.getElementById("news");
+  while (span.childNodes.length) span.removeChild(span.childNodes[0]);
+  delay*=1000;
+  newsp=document.createElement("span");
+  cursp=document.createElement("span");
+  cursp.appendChild(document.createTextNode(String.fromCharCode(160)+cursor));
+  span.appendChild(newsp);
+  span.appendChild(cursp);
+  ticker();
+}}
+
+function ticker() {
+  var i;
+  while (newsp.childNodes.length) newsp.removeChild(newsp.childNodes[0]);
+  newsp.appendChild(document.createTextNode(news[item].substring(0,1)));
+  for (i=1; i<news[item].length; i++) setTimeout('newsp.firstChild.nodeValue="'+news[item].substring(0, i+1)+'"', 100*i);
+  if (news[item].indexOf("www")!=-1) setTimeout('linkit('+item+')', 100*i);
+  setTimeout('flash=setInterval("cursp.style.visibility=(cursp.style.visibility==\'visible\')?\'hidden\':\'visible\'", 234)', 100*i)
+  setTimeout('clearInterval(flash)', delay);
+  setTimeout('cursp.style.visibility="visible"', delay);
+  setTimeout('ticker()', delay);
+  item=++item%news.length;
+}
+
+function linkit(q) {
+  var a,p,e,l;
+  p=news[q].indexOf("www");
+  e=news[q].indexOf(" ", p);
+  if (e==-1) e=news[q].length;
+  l=news[q].substring(p, e);
+  while (newsp.childNodes.length) newsp.removeChild(newsp.childNodes[0]);
+  newsp.appendChild(document.createTextNode(news[q].substring(0, p)));
+  a=document.createElement("a");
+  a.href="http://"+l;
+  a.appendChild(document.createTextNode(l));
+  newsp.appendChild(a);
+  newsp.appendChild(document.createTextNode(news[q].substring(e)));
+}
+// ]]>
+        </script>
+        <!--Above: Blinking typewriter effect for news ticker--->
+    
+        <style>
+        /* Unvisited link */
+         a:link {
+           color: rgb(42, 73, 49);
+             }
+
+         /* Visited link */
+        a:visited {
+            color: rgb(255, 175, 188);
+        }
+
+        /* Mouse over link */
+        a:hover {
+            color: red;
+        }
+
+        /* Selected link/active state */
+        a:active {
+            color: yellow;
+        }
+         </style>
+
+    </head>
+    
+    
+<body>
+    <div class="box2">
+        <div class="box"> <h1><span id="news">31,025 Minutes</span></h1></div>
+       
+            <p> 
+            One of my favorite childhood TV channels was Food Network – <i>Diners, Drive-Ins, and Drives, Chopped, Iron Chef</i> – to name a few. Even after the decline of cable television (RIP), I got my new fix from cooking channels on Youtube. I would binge watch <i>Buzzfeed/Tasty’s</i> Youtube videos all day. From the “How-To” videos to the competitive cooking shows, to the reality TV side of cooking, the vast subgenres of food content was never boring to me. But the thought of recreating these meals would have never crossed my mind. I’m not sure what it was, maybe the intensity of watching people put their all – hours, sweat, and dignity – into something was really entertaining. Especially, when you know the “thing” you’ve made will be gone, in a matter of minutes. Maybe chefs are just masochists with funny hats and aprons…
+
+            <br><br>
+
+            I’ll tell you what, I recently started rewatching <i>The Bear</i> (2022) on Hulu. I picked up the show in 2022, when everyone was watching it. I never got to finish it. Life got busy, at the very peak of Post-Covid-But-Not-Really-Because-Covid-Was-Still-A-Real-Thing-But-We-Had-Vaccines kind of time. I recently graduated from high school and was about to enter college for my Bachelors. During then, I lived off of the meal plan that was included in our dormitory housing plan. The best way to sum up what I mostly ate my freshman year? Chicken. Grilled Chicken. Fried Chicken. Chicken tenders with a side of special Cane’s sauce. Chicken with rice.
+
+                Some variation of chicken! I would eat my chicken in front of my laptop, totally engrossed in the heat of the show, being captured by the intensity of the drama and chaos before they would serve the meal. I was lucky enough to have a break away from all that chicken when my aunt took four hours of her time to make a day-trip to come visit me and bring me her home cooked Vietnamese food. I felt so grateful.
+
+            <br><br>
+
+            I was spoiled growing up. My grandmother was always home and we had fresh meals on our table. Being 794 miles away from home, when you share your day with the amount of time you spend eating food, which is apparently averaged to be <a href="https://ers.usda.gov/data-products/charts-of-note/chart-detail?chartId=107793"> 85 minutes per day</a>, you’re forever married to this consumption career.
+
+            <br><br>
+
+            I did the math: 
+
+            <br><br>
+
+            85 minutes per day x 365 days = 31,025 minutes.
+            <br><br>
+            31,025 minutes of a lot of time: just eating. That is not even including the time to buy groceries, plan, and cook. With all that time constantly consuming, it made me think how do I spend it? Is it meaningful to eat all that chicken? 
+            
+            <br><br>
+
+            Now, being in my final year of university, I live with my housemates and have my own kitchen. And don’t get me wrong, I still watch my Youtube cooking videos. But this time, I’m indulging in more elevated channels such as <i><a href="https://www.youtube.com/@bonappetit">Bon Appétit</a></i> and <i><a href="https://www.youtube.com/@andy_cooks">Andy Cooks</a></i>. Much fancier ~ These channels feature behind the scenes footage of seasoned chefs from <i>super</i>, high-end global restaurants with their <i>very</i> professional advice on enhancing home cooking. Ooo la, la ~
+            
+            <br><br>
+            
+            Living on my own, I had to take a more active role in what I ate. Over time, I gathered information and recipes from my little videos. It started small; I learned to make a proper steak and what basting was. You gotta baste it and let it rest! Keep it juicy!
+
+            <br><br>
+
+            Then, I moved on to other recipes that felt closer to home. I made <i><a href="https://vickypham.com/blog/vietnamese-sour-catfish-soup-canh-chua/">Canh Chua</a></i>, a Vietnamese Sweet and Sour Soup. The first sip I had of the soup was like an emotional jab. The memories of me in our kitchen – which was oddly in our <a href="https://www.tiktok.com/@vinaanle_/video/7056834112484543791">garage</a> – had hit me. We had our cooking station in the garage because with the nature of the strong, fragrant smells of Vietnamese food, they were worried it would confiscate our inside air. So, there we were, preparing our fondest memories of family dinners and parties, residing in that tiny space with beads of sweat and a weak grease-stained oscillating fan. I would sit on the cracked plastic stool, close to the ground, picking leaves and prepping the vegetables. 
+        
+            <br><br>
+
+            My grandma would say <i>“Lại đây nếm thử” </i> – come here and try it. She had about permanently burnt her tongue from all of her time of cooking. I had become her sense of taste.
+            
+            <br><br>
+
+            “Was it too salty? Too tart? More sugar?”, she would ask me. 
+            
+            <br><br>
+
+            I would answer. I felt prideful when she agreed with my suggestion. I had never actually made the dish, just picked my veggies and watched her methodically freehand her seasoning. Occasionally, she would ask me if I’m watching closely. 
+            
+            <br><br>
+
+            “Make sure you see this. You will need to learn to cook for your husband and family someday.” 
+            
+            <br><br>
+
+            I would scoff knowing damn well my <a href="https://tenor.com/view/booty-flakes-spongebob-rainbow-gif-6203724">gay-ass</a> would never cook for a man. Out of spite, I initially rejected learning. Who do I look like being a fool chained to patriarchal standards? You’re not making me into a housewife!
+            
+            <br><br>
+
+            But still, I watched, mostly out of awe. She seemingly knew how every dish was made.
+            
+            <br><br>
+
+            I think being in that space has made me absorb more knowledge than I had thought. Grocery shopping in an Asian market for <i> Canh Chua </i> was exciting. I recognized the herbs and ingredients my grandma once used. These ingredients were in English, which was ironically more foreign to me considering I was born in Florida. I had only known them by their Vietnamese name. 
+            
+            <br><br>
+
+            <i> Canh Chua </i> was the first traditional Vietnamese food I made for myself with my partner (Gotcha grandma I’m a Lesbian!). After we had made the meal together, we would prop up a laptop and put on a show together. We both revisited the show, <i>The Bear</i> (2022), a few weeks ago. This time I watched it with a new profound appreciation for the way the chefs would systematically move through the kitchen. It reminded me of my grandma, basking in the heat of the gas stove, navigating to each item with ease and the hours of preparation for the final moment.
+            
+            <br><br>
+
+            I picked up some habits from the show and my grandma. I started to label my ingredients with blue masking tape and a sharpie and practiced <i><a href="">mise en place</a></i>. I grew my pantry to include all of the key tools for a successful Vietnamese dish. And admittedly, I've accidentally burnt my tongue a few times due to my eagerness.
+            
+            <br><br>
+
+            So, thank you to my <i> Bà ngoại </i> – my grandma – and to Jeremy Allen White and Ayo Edebiri from <i>The Bear</i>; my 31,025 minutes have begun to feel more worthwhile.
+
+            </p>
+    
+     </div>    
+        
+
+
+
+ </body>
+
+ </html>

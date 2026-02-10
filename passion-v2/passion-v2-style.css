@@ -1,0 +1,17 @@
+body {background-color: rgb(243, 243, 243);
+    color: rgb(26, 23, 21);
+    font-family: 'Gowun Batang', serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 30px;
+    padding: 15px;
+    text-align: left;
+}
+
+#minutes-tape {
+    animation: blink 5s infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
