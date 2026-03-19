@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    margin:0;
+}
+
+.box {
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+    /* animation-name:test;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: both;*/
+
+    animation: test 4s 2s infinite linear alternate both;
+}
+
+/* in the animation shorthand propert, the first time value correspinds with animation duration, and the second time value corresponds with the delay*/
+
+
+@keyframes test {
+    0% {
+        background-color: red;
+        height:200px
+    }
+
+
+    100% {
+        background-color: yellow;
+        height:400px;
+    }
+        
+}
+
+.container {
+    background-color: lightpink;
+    height:100vh;
+    width:50vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.circle {
+    background-color: lightblue;
+    width:100px;
+    height:100px;
+    border-radius: 100%;
+    animation: pulse 2s infinite alternate ease-in-out;
+
+}
+
+@keyframes pulse {
+    0%{
+        background: light gray;
+        scale:1;
+    }
+
+    100% {
+        background: yellow;
+        scale: 1.4;
+    }
+
+}
+
+.square {
+    background-color: lightblue;
+    width:150px;
+    height:150px;
+    animation: spin 3s infinite alternate ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes spin {
+    0% {
+        background-color:red;
+        rotate:0deg;
+
+
+    }
+
+    50% {
+        background-color: lightpink;
+        rotate: 180deg;
+    }
+
+    100% {
+
+        background-color:rgb(0, 119, 255);
+        rotate: 360deg;
+    }
+
+}
+
+.mover {
+    background-color:lightgreen;
+    width:150px;
+    height:50px;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    animation: move 2s infinite alternate;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+    
+}
+
+@keyframes move{
+    0%{
+        background-color: lightgreen;
+        left:0%;
+        bottom:0;
+    }
+    100%{
+       background-color:lightgreen; 
+        left:100%;
+        bottom:0;
+
+    }
+}

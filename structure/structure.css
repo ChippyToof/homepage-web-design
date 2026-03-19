@@ -1,0 +1,141 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    cursor: none;
+    height: 100%;
+    background-image: url('assets/nyc_big_rat_subway.gif');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   /* cursor: url('assets/rat-posed.png'), auto; */
+
+}
+
+.title-container {
+    text-align: center;
+    
+}
+
+.custom-cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    
+    
+}
+
+.site-wide {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border: 2px dotted #f52947;
+    
+    
+   /* border-left: 15px solid  transparent;
+    border-right: 15px solid  transparent;
+    border-bottom: 50px solid #f52948; */
+
+    
+    
+    
+}
+
+.site-wide .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #f52947;
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+} 
+
+.site-wide.active .pointer {
+    width: 20px;
+    height: 20px;
+}
+
+h1 {
+    font-family: "archer-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 150px;
+    color:#fbee3d;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black, 5px 5px  #f52948, 7px 0 black, 0 7px black, 7px 0 black ; 
+    text-align: center;
+}
+
+
+h2 {
+    font-family: "helvetica-bold", sans-serif;
+    font-size: 30px;
+    color: #fbee3d;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black;
+    text-align: center;
+}
+
+/* @keyframes cursor {
+    0% { cursor: url('assets/rat-posed.png'), auto; }
+    50% { cursor: url('assets/rat-posed.png'), auto; }
+    100% { cursor: url('assets/rat-posed.png'), auto; }
+} */
+
+
+.listening {
+
+}
+
+/* Color when the user hovers over the link */
+a:hover {
+  color:#f52948;
+  text-decoration: none; /* New color on hover */
+}
+
+
+.rat-cursor {
+    position: absolute;
+    left: -230px;
+    top: -60px;
+}
+
+.box {
+    
+    background-color: rgb(70, 70, 70);
+    white-space: nowrap;
+    overflow:scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.box-child {
+    width: 70px;
+    height: 50vh;
+    
+    margin: 10px;
+    display: inline-block;
+}
+
+.pizza-slice {
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+hr {
+    border: 2px solid #eeff30;
+
+}
+
+.crushed-can {
+    position: relative;
+    top: 30px;
+    left: -30px;
+}

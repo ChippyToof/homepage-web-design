@@ -1,0 +1,939 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    margin:0;
+}
+
+.box {
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+    /* animation-name:test;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: both;*/
+
+    animation: test 4s 2s infinite linear alternate both;
+}
+
+/* in the animation shorthand propert, the first time value correspinds with animation duration, and the second time value corresponds with the delay*/
+
+
+@keyframes test {
+    0% {
+        background-color: red;
+        height:200px
+    }
+
+
+    100% {
+        background-color: yellow;
+        height:400px;
+    }
+        
+}
+
+.container {
+    background-color:lightgreen;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.circle {
+    background-color: lightblue;
+    width:100px;
+    height:100px;
+    border-radius: 100%;
+    animation: pulse 2s infinite alternate ease-in-out;
+
+}
+
+@keyframes pulse {
+    0%{
+        background: light gray;
+        scale:1;
+    }
+
+    100% {
+        background: yellow;
+        scale: 1.4;
+    }
+
+}
+
+.square {
+    background-color: lightblue;
+    width:150px;
+    height:150px;
+    animation: spin 3s infinite alternate ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes spin {
+    0% {
+        background-color:red;
+        rotate:0deg;
+    }
+
+    50% {
+        background-color: lightpink;
+        rotate: 180deg;
+    }
+    100% {
+
+        background-color:rgb(0, 119, 255);
+        rotate: 360deg;
+    }
+
+}
+
+
+
+
+
+
+
+.mover {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:15%;
+    animation: move 4s 4s infinite linear alternate; 
+    
+}
+
+@keyframes move{
+    0%{
+        background-color: lightgreen;
+        top:0%;
+        left:0%;
+    
+    }
+
+    50%{
+       background-color:lightskyblue; 
+        top:50%;
+        left:0%;
+
+    }
+
+    100%{
+        background-color: lightgreen;
+        top:100%;
+        left:0%;
+}
+
+
+/* .long-mover-1 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:0%;
+     animation: lmove1 4s 4s infinite linear alternate; */
+    
+}
+
+@keyframes lmove1{
+    0%{
+        background-color: lightgreen;
+        left:0%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+
+    50% {
+        background-color: lightgreen;
+        left:0%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+
+    100%{
+       background-color:lightskyblue; 
+        left:0%;
+        top:100%;
+        width: 50px;
+        height:500px;
+    }
+}
+
+
+.mover-2 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:5%;
+     animation: move2 3s 4s infinite linear alternate; 
+    
+    
+}
+
+
+@keyframes move2{
+    0%{
+        background-color:lightgreen;
+;
+        top:0%;
+        left:5%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:5%;
+        
+
+    } 
+
+}
+
+.mover-3 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:10%;
+   animation: move3 5s 4s infinite linear alternate; 
+    
+    
+}
+
+
+@keyframes move3{
+    0%{
+        background-color: #50a350;
+        top:0%;
+        left:10%;  
+    }
+
+    100%{
+       background-color:#4047fe;
+       top:100%; 
+       left:10% 
+
+    }
+} 
+
+.long-mover-2 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:10%;
+     animation: lmove2 5s 4s infinite linear alternate;
+    
+}
+
+@keyframes lmove2{
+    0%{
+        background-color: lightgreen;
+        left:10%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+
+    50% {
+        background-color: lightskyblue;
+        left:10%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+
+    100%{
+       background-color:lightgreen; 
+        left:10%;
+        top:100%;
+        width:50px;
+        height:500px;
+    }
+}
+
+
+
+
+.mover-4 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:15%;
+    animation: move4 4s 4s infinite linear alternate; 
+    
+}
+
+@keyframes move4{
+    0%{
+        background-color: lightgreen;
+        top:0%;
+        left:15%;
+    }
+    100%{
+       background-color:lightskyblue; 
+        top:100%;
+        left:15%;
+
+    }
+}
+
+
+.mover-5 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:20%;
+     animation: move5 3s 4s infinite linear alternate;
+    
+    
+}
+
+
+@keyframes move5{
+    0%{
+        background-color:lightgreen;
+;
+        top:0%;
+        left:20%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:20%;
+        
+
+    } 
+
+}
+
+.long-mover-3 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:25%;
+     animation: lmove3 5s 4s infinite linear alternate-reverse;
+    
+}
+
+@keyframes lmove3{
+    0%{
+        background-color: lightgreen;
+        left:25%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+    50% {
+        background-color: lightskyblue;
+        left:25%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+    100%{
+       background-color:lightgreen; 
+        left:25%;
+        top:100%;
+        width:50px;
+        height:500px;
+    }
+}
+
+
+.mover-6 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:25%;
+    animation: move6 5s 4s infinite linear alternate; 
+    
+    
+}
+
+
+@keyframes move6{
+    0%{
+        background-color: #50a350;
+        top:0%;
+        left:25%;
+        
+    }
+    100%{
+       background-color:#4047fe;
+       top:100%; 
+       left:25%;
+        
+
+    }
+} 
+ 
+
+.mover-7 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:30%;
+      animation: move7 4s 4s infinite linear alternate; 
+    
+}
+
+@keyframes move7{
+    0%{
+        background-color: lightgreen;
+        left:30%;
+        top:0%;
+        width: 50px;
+        height:50px;
+    }
+
+    100%{
+       background-color:lightskyblue; 
+        left:30%;
+        top:100%;
+        width: 50px;
+        height:50px;
+
+
+    }
+}
+
+.mover-8 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:35%;
+      animation: move8 3s 4s infinite linear alternate;
+    
+    
+}
+
+
+@keyframes move8{
+    0%{
+        background-color:lightgreen;
+;
+        top:0%;
+        left:35%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:35%;
+        
+
+    } 
+
+}
+
+
+.long-mover-4 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:40%;
+     animation: lmove4 5s 4s infinite linear alternate;
+    
+}
+
+@keyframes lmove4{
+    0%{
+        background-color: lightgreen;
+        left:40%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+
+    50% {
+        background-color: lightskyblue;
+        left:40%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+
+    100%{
+       background-color:lightgreen; 
+        left:40%;
+        top:100%;
+        width:50px;
+        height:500px;
+    }
+}
+
+.mover-9 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:40%;
+   animation: move9 5s 4s infinite linear alternate; 
+    
+    
+}
+
+
+@keyframes move9{
+    0%{
+        background-color: #50a350;
+        top:0%;
+        left:40%;
+        
+    }
+    100%{
+       background-color:#4047fe;
+       top:100%; 
+       left:40%;
+        
+
+    }
+} 
+
+.mover-10 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:45%;
+     animation: move10 4s 4s infinite linear alternate;
+    
+}
+
+@keyframes move10{
+    0%{
+        background-color: lightgreen;
+        top:0%;
+        left:45%;
+    }
+    100%{
+       background-color:lightskyblue; 
+        top:100%;
+        left:45%;
+
+    }
+}
+
+
+.mover-11 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:50%;
+     animation: move11 3s 4s infinite linear alternate; 
+    
+
+}
+
+
+@keyframes move11{
+    0%{
+        background-color:lightgreen;
+        top:0%;
+        left:50%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:50%;
+        
+
+    } 
+
+}
+
+.long-mover-5 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:55%;
+     animation: lmove5 5s 4s infinite linear alternate-reverse;
+    
+}
+
+@keyframes lmove5{
+    0%{
+        background-color: lightgreen;
+        left:55%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+    50% {
+        background-color: lightskyblue;
+        left:55%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+    100%{
+       background-color:lightgreen; 
+        left:55%;
+        top:100%;
+        width:50px;
+        height:500px;
+    }
+}
+
+.mover-12 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:55%;
+   animation: move12 5s 4s infinite linear alternate; 
+    
+    
+}
+
+
+@keyframes move12{
+    0%{
+        background-color: #50a350;
+        top:0%;
+        left:55%;
+        
+    }
+    100%{
+       background-color:#4047fe;
+       top:100%; 
+       left:55%;
+        
+    }
+} 
+
+.mover-13 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:60%;
+    animation: move13 4s 4s infinite linear alternate; 
+    
+}
+
+@keyframes move13{
+    0%{
+        background-color: lightgreen;
+        top:0%;
+        left:60%;
+    }
+    100%{
+       background-color:lightskyblue; 
+        top:100%;
+        left:60%;
+
+    }
+}
+
+.mover-14 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:65%;
+      animation: move14 3s 4s infinite linear alternate;
+    
+
+}
+
+
+@keyframes move14{
+    0%{
+        background-color:lightgreen;
+        top:0%;
+        left:65%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:65%;
+        
+
+    } 
+}
+
+.long-mover-6 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:70%;
+     animation: lmove6 5s 4s infinite linear alternate;
+    
+}
+
+@keyframes lmove6{
+    0%{
+        background-color: lightgreen;
+        left:70%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+
+    50% {
+        background-color: lightskyblue;
+        left:70%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+
+    100%{
+       background-color:lightgreen; 
+        left:70%;
+        top:100%;
+        width:50px;
+        height:500px;
+    }
+}
+
+.mover-15 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:70%;
+   animation: move15 5s 4s infinite linear alternate;
+    
+    
+}
+
+
+@keyframes move15{
+    0%{
+        background-color: #50a350;
+        top:0%;
+        left:70%;
+        
+    }
+    100%{
+       background-color:#4047fe;
+       top:100%; 
+       left:70%;
+        
+    }
+} 
+
+.mover-16 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:75%;
+    animation: move16 4s 4s infinite linear alternate; 
+    
+}
+
+@keyframes move16{
+    0%{
+        background-color: lightgreen;
+        top:0%;
+        left:75%;
+    }
+    100%{
+       background-color:lightskyblue; 
+        top:100%;
+        left:75%;
+
+    }
+}
+
+
+.mover-17 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:80%;
+     animation: move17 3s 4s infinite linear alternate;
+    
+
+}
+
+
+@keyframes move17{
+    0%{
+        background-color:lightgreen;
+        top:0%;
+        left:80%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:80%;
+        
+
+    } 
+}
+
+.mover-18 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:85%;
+    animation: move18 5s 4s infinite linear alternate;
+    
+    
+}
+
+
+@keyframes move18{
+    0%{
+        background-color: #50a350;
+        top:0%;
+        left:85%;
+        
+    }
+    100%{
+       background-color:#4047fe;
+       top:100%; 
+       left:85%;
+        
+    }
+} 
+
+
+.long-mover-7 {
+    background-color:lightgreen;
+    width:50px;
+    height:300px;
+    position:absolute;
+    top:0%;
+    left:90%;
+     animation: lmove7 5s 4s infinite linear alternate-reverse;
+    
+}
+
+@keyframes lmove7{
+    0%{
+        background-color: lightgreen;
+        left:85%;
+        top:0%;
+        width:50px;
+        height:300px;
+    }
+    50% {
+        background-color: lightskyblue;
+        left:85%;
+        top:0%;
+        width:50px;
+        height:50px;
+    }
+    100%{
+       background-color:lightgreen; 
+        left:%;
+        top:100%;
+        width:50px;
+        height:500px;
+    }
+}
+
+.mover-19 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:85%;
+    animation: move19 4s 4s infinite linear alternate;
+    
+}
+
+@keyframes move19{
+    0%{
+        background-color: lightgreen;
+        top:0%;
+        left:90%;
+    }
+    100%{
+       background-color:lightskyblue; 
+        top:100%;
+        left:90%;
+
+    }
+}
+
+.mover-20 {
+    background-color:lightgreen;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0%;
+    left:95%;
+     animation: move20 3s 4s infinite linear alternate;
+    
+
+}
+
+
+@keyframes move20{
+    0%{
+        background-color:lightgreen;
+        top:0%;
+        left:95%;
+        
+    }
+    100%{
+       background-color:lightskyblue;
+       top:100%; 
+       left:95%;
+        
+
+    } 
+}
