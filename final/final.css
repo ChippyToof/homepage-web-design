@@ -90,6 +90,10 @@ header {
     color: rgb(36, 26, 19);
     line-height: 30px;
 }
+
+.river-img {
+    width: 100px;
+    height: auto;}
 /* min-width = mobile first */
 /* for mobile-first, we want our media queries to increase in pixel size as we move down our css document */
 
