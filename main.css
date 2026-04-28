@@ -16,10 +16,11 @@ body {
 }
 
     h1 {
-        font-family: 'Gentium Plus', serif;
+        font-family: 'arial narrow', sans;
         font-size: 65px;
         font-style: regular;
         line-height: 63px;
+        text-align: center;
    
 }
 
@@ -38,32 +39,37 @@ body {
     /* background-color: rgba(255, 255, 255, 0.5); */
     padding: 30px 80px 30px 80px;
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Gentium Plus', serif;
-    
+    row-gap: 5px;
+    justify-content: center;
 }
 
 .menu-buttons {
-    font-family: 'Gentium Plus', serif;
+    font-family: 'arial narrow', sans;
+    border-radius: 5px;
     padding: 5px 20px 5px 20px;
 }
 
+
 #goodbye-button {
     
-    font-family: 'Gentium Plus', serif;
+    font-family: 'arial narrow', sans;
     color: white;
     background-color: rgb(224, 84, 84);
     border-color: #3c3227;
     position: absolute;
     display: sticky;
-    top: 70px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     
 }
 
 .enter-button {
     padding:10px 80px 10px 80px;
     font-size: 20px;
-    font-family: 'Gentium Plus', serif;
+    border-radius: 5px;
+    font-family: 'arial narrow', sans;
     animation: blink 1s linear infinite;
    
 }
