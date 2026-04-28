@@ -3,39 +3,93 @@
     <head>
         <title>My Homepage</title>
         <meta name="viewport" content="width-device-width, initial-static-1.0">
-        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="../final/final.css">
+
+        <script type="text/javascript">
+// <![CDATA[
+var speed=100; // speed of wobbling, lower is faster
+var height=3; // height of wobbling in pixels
+var alink="http://www.mf2fm.com/rv"; // page to link text to (set to ="" for no link)
+
+/****************************
+*    Wobbly Text Effect     *
+*(c) 2003-6 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX *
+****************************/
+var wobtxt, wobble, wobcnt=0;
+window.onload=function() { if (document.getElementById) {
+  var i, wobli;
+  wobble=document.getElementById("wobble");
+  wobtxt=wobble.firstChild.nodeValue;
+  while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+  for (i=0; i<wobtxt.length; i++) {
+    wobli=document.createElement("span");
+    wobli.setAttribute("id", "wobb"+i);
+    wobli.style.position="relative";
+    wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+    if (alink) {
+      wobli.style.cursor="pointer";
+      wobli.onclick=function() { top.location.href=alink; }
+    }
+    wobble.appendChild(wobli);
+  }
+  setInterval("wobbler()", speed);
+}}
+
+function wobbler() {
+  for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+  wobcnt++;
+}
+// ]]>
+</script>
     </head>
 
 <body>
 <div class="container">
     <header>
-       <h1>Seaweed</h1>
+       <h1><div id="wobble">Welcome</div><h1><img class="hamster-cup" src="assets/hamster-cup.gif">
     </header>
     <main>
         <div class="left">
-            <ul>
-                <li>Habitat</li>
-                <li>Usages</li>
-                <li>Diet</li>
-            </ul>
+            <div class="nav">
+            <p>
+                <a href=../final/final.html>Home </a> <br>
+                <a href=pages/about-me.html>About Me</a> <br>
+                Handmade Web <br>
+                <a href="https://riverhuynh.com">Portfolio </a> <br>
+                Socials <br>
+            </p>
+        </div>
         </div>
 
         <div class="center">
-            <p>Seaweed, or macroalgae, refers to thousands of species of macroscopic, multicellular, marine algae. The term includes some types of Rhodophyta (red), Phaeophyta (brown) and Chlorophyta (green) macroalgae. Seaweed species such as kelps provide essential nursery habitat for fisheries and other marine species and thus protect food sources; other species, such as planktonic algae, play a vital role in capturing carbon and producing at least 50% of Earth's oxygen.[3]
+            <h3> Intro</h3>
+            <p>   Welcome to River Huynh's website! I'm River! I'm a designer and artist. In my freetime, I like to collect physical media: books, magazines, cds. </p>
 
-Natural seaweed ecosystems are sometimes under threat from human activity. For example, mechanical dredging of kelp destroys the resource and dependent fisheries. Other forces also threaten some seaweed ecosystems; for example, a wasting disease in predators of purple urchins has led to an urchin population surge which has destroyed large kelp forest regions off the coast of California.
-
-Humans have a long history of cultivating seaweeds for their uses. In recent years, seaweed farming has become a global agricultural practice, providing food, source material for various chemical uses (such as carrageenan), cattle feeds and fertilizers. Due to their importance in marine ecologies and for absorbing carbon dioxide, recent attention has been on cultivating seaweeds as a potential climate change mitigation strategy for biosequestration of carbon dioxide, alongside other benefits like nutrient pollution reduction, increased habitat for coastal aquatic species, and reducing local ocean acidification.[5] The IPCC Special Report on the Ocean and Cryosphere in a Changing Climate recommends "further research attention" as a mitigation tactic.</p>
+            <br>
+            <h3> Status </h3>
+            <p> I'm currently working on my senior capstone project! Soooo swamped right now. Gulp!</p>
+            <img src="../final/assets/project-001.JPG">
+            <img src="../final/assets/project-002.JPG">
+            <img src="../final/assets/project-003.JPG">
         </div>
 
         <div class="right">
-            <img src="seaweed.jpg">
+            <h3>Currently Interested</h3>
+            <p>Tomodachi Life: Living the Dream</p><img src="../final/assets/_river_tomodachi.jpg">
+
+            <img src="../final/assets/tomodachi-life.jpeg">
+
+            <br>
+            <p> Hand making leather journals </p>
+            <img src="../final/assets/my-journal.JPG">
         </div>
 
 
     </main>
      <footer>
-            Seaweed must be consumed.
+            Fun fact: I really love tofu.
         </footer>
 
 

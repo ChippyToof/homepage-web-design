@@ -7,10 +7,28 @@ img {
 }
 
 body {
-    background:lightgrey;
+    background:rgb(199, 220, 234);
     transition: background .5s;
 }
 
+h1 {
+    font-family: 'darumadrop one', sans;
+    font-size:60px;
+    color: rgb(36, 26, 19);
+    text-shadow: 2px solid whitesmoke;
+}
+
+h3 {
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    color: rgb(36, 26, 19);
+    background-color: rgb(218, 244, 152);
+}
+p {
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    color: rgb(36, 26, 19);
+}
 .container {
     display:flex;
     flex-direction: column;
@@ -30,19 +48,48 @@ header,
 .center,
 .right,
 footer {
-    border: 1px solid;
+    border: 2px rgb(167, 146, 132) solid;
     padding: 20px;
+    
 }
 
 .center {
     width:50%;
-
+    background-color: whitesmoke;
 }
 
 .left, .right {
     width:25%;
+    
 }
 
+.left {
+    background-color: rgb(231, 240, 220);
+}
+
+.right {
+    background-color: whitesmoke
+}
+header {
+    background-color: rgb(218, 244, 152);
+    display: flex;
+    flex-direction:wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.hamster-cup {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+.nav {
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(36, 26, 19);
+    line-height: 30px;
+}
 /* min-width = mobile first */
 /* for mobile-first, we want our media queries to increase in pixel size as we move down our css document */
 
@@ -52,7 +99,7 @@ footer {
 @media screen and (max-width:1000px)
 {
     body {
-        background: lightpink
+        background: rgb(251, 197, 205)
     }
 }
 
