@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color:white;
+    
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width:1500px;
+    background-color: aliceblue;
+    margin:0 auto;
+}
+
+.box {
+    background-color:seagreen;
+    width:100px;
+    height:100px;
+    align-items: center;
+    
+}
+
+
+
+@media screen and (max-width:1000px)
+{
+    body {
+        background-color: rgb(255, 246, 247)
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    body {
+        background-color: rgb(255, 239, 182)
+    }
+}
+
+/* min-width = mobile first */
+/* for mobile-first, we want our media queries to increase in pixel size as we move down our css document */
+
+/* max-width = desktop first */
+/* for desktop-first, we want our media queries to decrease in pixel as we move down our css document */

@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    /*outline: 1px solid red;*/
+}
+
+body {
+    background-color:#FFFAEB;
+    cursor: url("../kitchen/assets/knife.png"), auto;
+    
+}
+
+
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #3D1D04;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width:1100px;
+    margin:0 auto;
+    
+}
+
+/* unvisited link */
+a{
+  color:#3D1D04;
+  text-decoration:none;
+}
+
+.welcome-btn {
+    background-color:#E5AA79;
+    outline: solid 3px #77471F;
+    width:40%;
+    max-width: 500px;
+    height:auto;
+    padding: 30px;
+    margin:50vh auto 50vh;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+    color:#3D1D04;
+    
+
+    
+
+}
+
+.blink {
+    
+    max-width: 500px;
+    animation:blink 2s linear infinite alternate;
+    
+    
+}
+
+
+@keyframes blink{
+    0%{
+        opacity: 100%;
+        
+    }
+
+    70% {
+        opacity: 15%;
+        
+    }
+}
+
+
+.welcome-btn:hover {
+    background-color:#4691DC;
+    outline: solid 3px #3D1D04;
+    width:40%;
+    max-width: 500px;
+    height:auto;
+    padding: 30px;
+    margin:50vh auto 50vh;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+    color:#3D1D04;
+    animation-play-state:paused;
+    
+
+}
+
+
+.container-p1 {
+    background-image: url('/assets/corkboard.jpg');
+    background-repeat: repeat;
+    background-size:cover;
+    position: relative;
+    display:block;
+    max-width: 1100px;
+    margin:0px auto;
+    
+    
+}
+
+
+
+.recipe-paper {
+    background-color:#FFFAEB;
+    width: 400px;
+    height:515px;
+    outline: solid 2px #3d1d0445;
+    
+    position: absolute;
+    top: 70%;
+    left:50%;
+    transform: translate(-50%,50%);
+    padding:20px;
+    margin: 0;
+    display:inline-block;
+   
+
+    justify-content: center;
+    
+    font-family:'Pixelify Sans', sans-serif;
+    text-align: left;
+    color: #3D1D04;
+
+    z-index: 1;
+   
+    
+    
+
+    box-shadow: 5px 5px 10px #cf65148d;
+
+}
+
+.drag-area {
+    position: relative;
+    height: 100vh; /* full screen height */
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+}
+
+img {
+    width: 250px;
+    height:auto;
+}
+
+.recipe-text {
+    margin:30px;
+}
+
+
+.question-hover:hover {
+    cursor: help;
+
+}
+
+.tape-wrapper {
+    max-width: 1100px;
+    height: auto;
+    position:absolute;
+}
+
+.blue-tape-tr,
+.blue-tape-bl,
+.blue-tape-tl,
+.blue-tape-br {
+    position: absolute;
+    width: 105px;
+    height: 40px;
+    background-color: #4691DC;
+    z-index: 9999;
+    transition: all 0.2s ease;
+}
+
+.blue-tape-bl, .blue-tape-tr {
+    transform: rotate(45deg);
+}
+
+.blue-tape-br, .blue-tape-tl {
+    transform: rotate(-45deg);
+}
+
+.blue-tape-tl {
+    position: relative;
+    top:-470px;
+    left: -170px;
+}
+
+.blue-tape-tr {
+    position: absolute;
+    top:-470px;
+    left: 170px;
+}
+
+.blue-tape-bl {
+    position: absolute;
+    top:0;
+    left:-170px;
+}
+
+.blue-tape-br {
+    position: absolute;
+    top:0;
+    left: 170px;
+}
+
+
+.kitchen-btn {
+   background-color: #4691DC;
+    width: 250px;
+    height:60px;
+    position: absolute;
+    z-index: 2;
+    top: 320px;
+    left:800px;
+    box-shadow: 2px 2px 7px #28579588;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+
+}
+
+.kitchen-link:hover {
+    background-color: darkorange;
+    color:#FFFAEB;
+    
+}
+
+
+
+.corkboard {
+    width: 1100px;
+    height: 900px;
+    outline:20px solid #583219;
+} 
+
+.draggable {
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+.fall {
+  animation: fall 0.8s ease-in forwards;
+}
+
+/* Page 2 below */
+
+/* .kitchen-area {
+ position: relative;
+    height: 100vh; // full screen height //
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    /* align-items: center; 
+} */
+
+.bottom-half{
+    background-color:#D9D9D9;
+    height: 45%;
+    width: 1000vh;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.counter-box{
+    background-color:#E5AA79;
+    height: 15%;
+    width: 1000vh;
+    position:relative;
+    top:-300px;
+    left:0;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #583219;
+} 
+
+.counter-door{
+    background-color:#b1b1b1;
+    height: 500px;
+    width: 400px;
+    position:sticky;
+    top:100px;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   
+    z-index: 9999;
+} 
+
+
+
+
+
+
+
+@keyframes fall {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, 300px) rotate(20deg);
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width:1000px)
+{
+    body {
+        background: rgb(255, 246, 247)
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    body {
+        background: rgb(255, 239, 182)
+    }
+}
+
+/* min-width = mobile first */
+/* for mobile-first, we want our media queries to increase in pixel size as we move down our css document */
+
+/* max-width = desktop first */
+/* for desktop-first, we want our media queries to decrease in pixel as we move down our css document */
