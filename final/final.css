@@ -7,15 +7,16 @@ img {
 }
 
 body {
-   /* background-image: url(./assets/blue-bkgd.png) repeat center fixed; */
-     background:rgb(199, 220, 234);
-    transition: background .5s;
+   background: url(./assets/mini-orange-grids.gif) repeat center fixed;
+    /* background:rgb(199, 220, 234); */
+    /* transition: background .5s; */
 }
 
 h1 {
     font-family: 'darumadrop one', sans;
     font-size:55px;
-    color: rgb(36, 26, 19);
+    color: yellow;
+   /* color: rgb(36, 26, 19); */
     text-shadow: 2px solid whitesmoke;
 }
 
@@ -80,18 +81,65 @@ footer {
     background-color: whitesmoke
 }
 header {
-    /*background-color: rgb(218, 244, 152); */
-    background: url(./assets/orange-gingham.gif)  repeat center fixed;
+    
+   background: linear-gradient(#f9f917 25%, #dce7ff 85%, whitesmoke 100%);
+   /* background: url(./assets/falling-stars.gif)  repeat center fixed;
+   z-index: 9999; */
+    /*background-image: linear-gradient(#21e853 0%, whitesmoke 50%);*/
     align-items: center;
     text-align: center;
     height: auto;
     max-height: fit-content;
+    border: 1.5px rgb(198, 103, 14) solid;
+}
+
+.runner {
+    width:100%;
+    background: url(./assets/transparent-sparkles.gif) repeat center fixed;
+    /* background-color: whitesmoke; */
+}
+
+.marquee {
+
+    color: rgb(36, 26, 19);
+    line-height: 13px;
+    background-image: linear-gradient(rgb(246, 248, 249) 0%, rgb(229, 235, 238) 50%, rgb(215, 222, 227) 51%, rgb(245, 247, 249) 100%);
+    border: 1px solid rgb(133, 133, 133);
+    outline: 3px solid rgb(241, 199, 163);
+    border-radius:3px;
+    padding: 5px;
+
+    
+}
+
+.marquee-pic {
+    position: relative;
+    top: 3px;
+    width: auto;
+    height: 20px; 
+
+}
+
+.welcome-sign {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 3px; }
+
+.container {
+    background: url(./assets/clouds.gif)  repeat center fixed;
+    padding: 10px;
+    border: solid lightskyblue 2px;
+    border-radius: 5px;
+    margin:auto;
+    
 }
 
 .header-title {
     font-family: 'darumadrop one', sans;
     font-size:55px;
-    color: rgb(36, 26, 19);
+     /*color: yellow;*/
+    color: rgb(36, 26, 19); 
 }
 
 
@@ -99,6 +147,11 @@ header {
     width: 100px;
     height: auto;
     margin-left: 20px;
+}
+
+.center-cat {
+    width: 100%;
+    height: auto;
 }
 
 .contain {
@@ -110,7 +163,7 @@ header {
     width: 100%;
     height: auto;
     border: 1px dotted rgb(36, 26, 19);
-    background-image: linear-gradient(#d4efb1 0%, white 50%,  #d4efb1 100%);
+    background-image: linear-gradient(#21e853 0%, #dce7ff 80%, whitesmoke 100%);
     padding: 5px;
     margin: 2px;
     margin-left:-5px;
@@ -151,10 +204,43 @@ header {
 }
 
 .blinkies {
-    width: 200px;
+    width: 180px;
     height: auto;
 }
 
+
+.blinkies-bar {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    border: 1px dotted rgb(36, 26, 19);
+    background-image: linear-gradient(#e73745 0%, #dce7ff 80%, whitesmoke 100%);
+    padding: 5px;
+    margin: 2px;
+    margin-left:-5px;
+    color: rgb(36, 26, 19);
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    
+}
+
+.album-art {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: grid;
+    /* background: rgb(241, 199, 163); */
+    padding: 5px;
+    
+}
+
+.bar-emoticon {
+    width: 34px;
+    height: 30px;
+   
+}
 
 .interest-right {
     background-color: whitesmoke;
@@ -172,7 +258,7 @@ header {
     /* border: 1px solid rgb(36, 26, 19);
     border-radius: 5px; */
     background-image: linear-gradient(#d4efb1 0%, white 50%,  #d4efb1 100%);
-    padding: 7px;
+    padding: 5px;
     margin: 2px;
     margin-left:-5px;
     color: rgb(36, 26, 19);
@@ -192,12 +278,103 @@ header {
 }
 
 footer {
-    background-color: rgb(218, 244, 152);
+    background-image: linear-gradient(rgb(246, 248, 249) 0%, rgb(229, 235, 238) 50%, rgb(215, 222, 227) 51%, rgb(245, 247, 249) 100%);
     text-align: left;
     font-family: 'arial narrow', sans;
     font-size: 18px;
     color: rgb(36, 26, 19);
 }
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.myslides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* End of Slideshow container */
+
+
 
 
 /* min-width = mobile first */
@@ -209,13 +386,13 @@ footer {
 @media screen and (max-width:1000px)
 {
     body {
-        background: rgb(251, 197, 205)
+        background: url(./assets/mini-darkorange-grids.gif) repeat center fixed;
     }
 }
 
 @media screen and (max-width:800px)
 {
     body {
-        background: rgb(255, 239, 182)
+        background: url(./assets/mini-darkorange-grids.gif) repeat center fixed;
     }
 }
