@@ -7,7 +7,8 @@ img {
 }
 
 body {
-    background:rgb(199, 220, 234);
+   /* background-image: url(./assets/blue-bkgd.png) repeat center fixed; */
+     background:rgb(199, 220, 234);
     transition: background .5s;
 }
 
@@ -46,14 +47,21 @@ main {
 header,
 .left,
 .center,
-.right,
+.right, .center-pages,
 footer {
-    border: 2px rgb(167, 146, 132) solid;
-    padding: 20px;
-    
+    border: 1.5px rgb(48, 44, 40) solid;
+    padding: 17px;
+    outline: 3px solid rgb(241, 199, 163);
+    border-radius: 3px;
 }
 
 .center {
+    width:50%;
+    background: url(./assets/transparent-sparkles.gif) repeat center fixed;
+    background-color: whitesmoke;
+}
+
+.center-pages {
     width:50%;
     background-color: whitesmoke;
 }
@@ -68,32 +76,130 @@ footer {
 }
 
 .right {
+    background: url(./assets/transparent-sparkles.gif) repeat center fixed;
     background-color: whitesmoke
 }
 header {
-    background-color: rgb(218, 244, 152);
-    display: flex;
-    flex-direction:wrap;
+    /*background-color: rgb(218, 244, 152); */
+    background: url(./assets/orange-gingham.gif)  repeat center fixed;
     align-items: center;
     text-align: center;
+    height: auto;
+    max-height: fit-content;
 }
 
+.header-title {
+    font-family: 'darumadrop one', sans;
+    font-size:55px;
+    color: rgb(36, 26, 19);
+}
+
+
 .hamster-cup {
-    width: 200px;
+    width: 100px;
     height: auto;
     margin-left: 20px;
 }
+
+.contain {
+    padding: 5px;
+}
+
+.bar {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    border: 1px dotted rgb(36, 26, 19);
+    background-image: linear-gradient(#d4efb1 0%, white 50%,  #d4efb1 100%);
+    padding: 5px;
+    margin: 2px;
+    margin-left:-5px;
+    color: rgb(36, 26, 19);
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    
+}
+
+
 .nav {
     font-family: 'arial narrow', sans;
     font-size: 18px;
-    line-height: 22px;
     color: rgb(36, 26, 19);
-    line-height: 30px;
+    line-height: 25px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(36, 26, 19);
+    border-radius:3px;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+.container-pages {
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    width: auto;
+    color: rgb(36, 26, 19);
+    line-height: 25px;
+    background-color: whitesmoke;
+    border: 1px solid rgb(36, 26, 19);
+    border-radius:3px;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+.blinkies {
+    width: 200px;
+    height: auto;
+}
+
+
+.interest-right {
+    background-color: whitesmoke;
+    border: 1px solid rgb(36, 26, 19);
+    border-radius:3px;
+    padding: 5px;
+    margin: 1px;
+}
+
+.interest-bar {
+    text-align: left;
+    width: 105%;
+    height: auto;
+    border: 1px dotted rgb(36, 26, 19);
+    /* border: 1px solid rgb(36, 26, 19);
+    border-radius: 5px; */
+    background-image: linear-gradient(#d4efb1 0%, white 50%,  #d4efb1 100%);
+    padding: 7px;
+    margin: 2px;
+    margin-left:-5px;
+    color: rgb(36, 26, 19);
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    
 }
 
 .river-img {
     width: 100px;
     height: auto;}
+
+.music-title {
+    width: auto;
+}
+
+footer {
+    background-color: rgb(218, 244, 152);
+    text-align: left;
+    font-family: 'arial narrow', sans;
+    font-size: 18px;
+    color: rgb(36, 26, 19);
+}
+
+
 /* min-width = mobile first */
 /* for mobile-first, we want our media queries to increase in pixel size as we move down our css document */
 
