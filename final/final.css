@@ -15,7 +15,7 @@ body {
 h1 {
     font-family: 'darumadrop one', sans;
     font-size:55px;
-    color: yellow;
+    color: rgb(36, 26, 19);
    /* color: rgb(36, 26, 19); */
     text-shadow: 2px solid whitesmoke;
 }
@@ -50,7 +50,7 @@ header,
 .center,
 .right, .center-pages,
 footer {
-    border: 1.5px rgb(48, 44, 40) solid;
+    border: 1px rgb(198, 103, 14)solid;
     padding: 17px;
     outline: 3px solid rgb(241, 199, 163);
     border-radius: 3px;
@@ -82,10 +82,10 @@ footer {
 }
 header {
     
-   background: linear-gradient(#f9f917 25%, #dce7ff 85%, whitesmoke 100%);
+   /* background: linear-gradient(#f9f917 25%, #dce7ff 85%, whitesmoke 100%); */
    /* background: url(./assets/falling-stars.gif)  repeat center fixed;
    z-index: 9999; */
-    /*background-image: linear-gradient(#21e853 0%, whitesmoke 50%);*/
+    background: url(./assets/bright-yellow-plaid.jpg) repeat center fixed;
     align-items: center;
     text-align: center;
     height: auto;
@@ -154,8 +154,23 @@ header {
     height: auto;
 }
 
+
+
 .contain {
     padding: 5px;
+    position: relative;
+}
+
+.cat-balloon {
+    align-content: right;
+    /* background-color: rgb(241, 199, 163); */
+    float:right;
+    margin-left: 15px;
+    margin-top: -50px;
+}
+
+.contain, .cat-balloon {
+    align-items:right;
 }
 
 .bar {
@@ -167,8 +182,10 @@ header {
     padding: 5px;
     margin: 2px;
     margin-left:-5px;
-    color: rgb(36, 26, 19);
-    font-family: 'arial narrow', sans;
+    color: rgb(2, 50, 25); 
+    /*color: rgb(36, 26, 19); */
+    /* font-family: 'Lilita One', sans; */
+    font-family: 'arial narrow', sans; 
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -203,6 +220,11 @@ header {
 
 }
 
+.container.dark {
+    background: url(./assets/mini-darkorange-grids.gif) repeat center fixed;
+}
+
+
 .blinkies {
     width: 180px;
     height: auto;
@@ -214,7 +236,7 @@ header {
     width: 100%;
     height: auto;
     border: 1px dotted rgb(36, 26, 19);
-    background-image: linear-gradient(#e73745 0%, #dce7ff 80%, whitesmoke 100%);
+    background-image: linear-gradient(#f9f917 10%, #dce7ff 85%, whitesmoke 100%);
     padding: 5px;
     margin: 2px;
     margin-left:-5px;
@@ -237,7 +259,7 @@ header {
 }
 
 .bar-emoticon {
-    width: 34px;
+    width: 33px;
     height: 30px;
    
 }
